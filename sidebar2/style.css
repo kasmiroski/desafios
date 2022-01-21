@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+button{
+    padding: 4px;
+    margin: 10px 0 0 10px;
+    border-radius: 6px;
+}
+
+closet-menu{
+
+}
+
+open-menu{
+    background-color: black;
+}
+
+icon {
+
+}
+
+i{
+    margin: 10px 5px;
+    display: flex;
+    list-style: none;
+}
+
+.menu{
+    display: none; 
+   }
+
+.active {
+display: inline;
+
+}
