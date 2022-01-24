@@ -5,35 +5,72 @@
     font-family: sans-serif;
 }
 
-button{
-    padding: 4px;
-    margin: 10px 0 0 10px;
-    border-radius: 6px;
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+      --light-grey: #dce4e3;
+    --text-color: #084236;
+  }
+
+#button{
+    padding-right: 10px;
+    border:none;
+    background-image:initial ;
+    background: 0px;
+    position: absolute;
+    right: 0;   
+    display: flex;   
+    cursor: pointer;
 }
 
-closet-menu{
-
-}
-
-open-menu{
-    background-color: black;
-}
-
-icon {
-
-}
-
-i{
-    margin: 10px 5px;
+.logo {
     display: flex;
-    list-style: none;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.open-menu{
+    background-color: var(--green);
+    position: relative;
+
+    height: 100vh;
+    width: 50px;
+
+    transition: 0.7s width;
 }
 
-.menu{
-    display: none; 
-   }
+li { 
+    font-family: sans-serif;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+
+}
+
+.teste {
+    margin: 10px;
+    display: flex;
+}
+
+.menu-elemento{
+    display: flex;
+    opacity: 0; 
+}
 
 .active {
-display: inline;
+    opacity: 1;
+    transition: 0.7s opacity;
+}
 
+.rodape {
+    bottom: 0;
+    align-items: center;
+    padding-right: 10px;
+    border:none;
+    background-image:initial ;
+    background: 0px;
+    position: absolute;
+    right: 0;   
+    display: flex;   
+    cursor: pointer;
 }
