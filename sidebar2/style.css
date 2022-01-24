@@ -2,16 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
     --body-bg-color: #dce4e3;
     --green: #18c29c;
     --light-green: #8ed7c6;
-      --light-grey: #dce4e3;
+    --light-grey: #dce4e3;
     --text-color: #084236;
-  }
+}
 
 #button{
     padding-right: 10px;
@@ -28,6 +28,7 @@
     display: flex;
     padding-top: 15px;
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 .open-menu{
     background-color: var(--green);
@@ -47,14 +48,43 @@ li {
 
 }
 
+li:hover{
+    background-color: var(--body-bg-color);
+    transition: 0.5s;
+}
+
 .teste {
-    margin: 10px;
-    display: flex;
+    margin: 10px;    
 }
 
 .menu-elemento{
+    color: var(--text-color);
     display: flex;
     opacity: 0; 
+ 
+}
+#busca {
+    align-items: center;
+    display: flex;
+    width: 95%;
+    height: 95%;
+    border:none;
+    border-radius: 8px;
+    background-color: var(--light-green);
+    
+}
+
+input[type=text] {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: var(--light-green);
+    color: var(--text-color);
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: var(--tran-05);
 }
 
 .active {
@@ -73,4 +103,21 @@ li {
     right: 0;   
     display: flex;   
     cursor: pointer;
+    background-color: var(--light-green);
+    width: 100%;
+}
+
+.rodape > span.menu-elemento{
+    display: none;
+}
+
+.rodape > span.active{
+    display: flex;
+}
+
+.perfil {
+    border-radius: 12px;
+    padding: 5px;
+    width: 50%;
+    height: 50%;
 }
